@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:weightSum="1.0">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="vertical"
+            android:background="@drawable/listrow"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_gravity="center_horizontal"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"/>
+
+            <ImageView
+                android:id="@+id/card_image"
+                android:layout_width="fill_parent"
+                android:layout_below="@+id/title"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.65"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignParentEnd="false"
+                />
+
+            <TextView
+                android:id="@+id/description"
+                android:singleLine="false"
+                android:textSize="12sp"
+                android:layout_below="@+id/card_image"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25" />
+
+        </LinearLayout>
+    
+        <RelativeLayout
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="0.15">
+
+            <TextView
+                android:id="@+id/card_position"
+                android:textSize="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Loading Cards..."
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/flashcard_button"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="0.25"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/previous_button"
+                android:layout_height="60dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+                android:text="Previous"
+                android:textColor="@android:color/white"
+                android:background="@drawable/flash_card_button_bg"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp">
+
+            </Button>
+            <Button
+                android:id="@+id/flip_button"
+                android:layout_height="60dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+                android:layout_margin="10dp"
+                android:text="Flip"
+                android:textColor="@android:color/white"
+                android:background="@drawable/flash_card_button_bg"
+                android:layout_centerHorizontal="true">
+
+            </Button>
+            <Button
+                android:id="@+id/next_button"
+                android:layout_height="60dp"
+                android:layout_width="0dp"
+                android:layout_weight="0.33"
+                android:layout_margin="10dp"
+                android:text="Next"
+                android:textColor="@android:color/white"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/flash_card_button_bg">
+
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/edge_left"
+        android:layout_alignParentLeft="true"
+        android:visibility="gone"
+        android:background="@drawable/edge_glow_left"
+        android:layout_height="fill_parent"
+        android:layout_width="70dp">
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/edge_right"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:background="@drawable/edge_glow_right"
+            android:layout_height="fill_parent"
+            android:layout_width="70dp">
+    </RelativeLayout>
+
+</RelativeLayout>

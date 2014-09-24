@@ -1,0 +1,12 @@
+<layer-list
+xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+   <item android:drawable="@drawable/rectangleshadow"
+       android:top="3px"
+       android:left="3px" />
+   <item
+     android:drawable="@drawable/rectangle"
+     android:bottom="3px"
+     android:right="3px"/>  
+ 
+</layer-list>

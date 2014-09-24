@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="0"
+        android:title="Settings"
+        android:icon="@drawable/icon_tools_settings"
+        android:showAsAction="ifRoom">
+    </item>
+
+</menu>

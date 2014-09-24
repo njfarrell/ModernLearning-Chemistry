@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image" >
+
+    <Spinner
+        android:id="@+id/deckSet"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentTop="true"
+        android:dropDownWidth="match_parent"
+        android:popupBackground="@android:color/black"
+        android:background="@drawable/mlc_dropdownbg"/>
+
+    <ListView
+        android:id="@+id/deck_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="15dp"
+        android:layout_below="@+id/deckSet" >
+    </ListView>
+</RelativeLayout>

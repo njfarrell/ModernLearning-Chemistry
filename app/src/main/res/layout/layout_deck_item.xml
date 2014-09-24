@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/row_item"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/listrow_background">
+ 
+    <ImageView
+        android:layout_centerVertical="true"
+        android:paddingLeft="10dp"
+        android:id="@+id/cardDeckImage"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/cardDeckName"
+        android:text="Title"
+        android:layout_width="fill_parent"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/cardDeckImage"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/cardDeckDescription"
+        android:text="Description"
+        android:layout_width="fill_parent"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardDeckName"
+        android:layout_toRightOf="@+id/cardDeckImage"
+        android:textSize="14sp" />
+    </RelativeLayout>
+</RelativeLayout>

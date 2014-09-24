@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+        android:title="Flash Card Options"
+        android:key="flash_card_category">
+         
+        <CheckBoxPreference
+            android:key="reverse_mode"
+            android:summaryOn="Display flash cards with the question-side first."
+            android:summaryOff="Display flash cards with the answer-side first."
+            android:title="Reverse Mode"
+            android:defaultValue="false"
+        />
+
+        <ListPreference
+            android:key="autorefresh_frequency"
+            android:title="Auto-Refresh Interval"
+            android:summary="Automatically refresh content after this amount of time."
+            android:entries="@array/settings_autorefresh_frequency"
+            android:entryValues="@array/settings_autorefresh_frequency_values"
+            android:defaultValue="172800"
+        />
+
+        <Preference
+            android:key="refresh_content"
+            android:summary="Refresh application content when next online."
+            android:title="Refresh Content Now"
+        />
+
+    </PreferenceCategory>
+
+
+     
+</PreferenceScreen>
